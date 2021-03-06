@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:weva/screens/home_screen.dart';
+import 'package:weva/screens/pages/ServicePageProvider.dart';
+import 'package:weva/screens/pages/ServiceProviderPage.dart';
+import 'package:weva/screens/pages/cardfile.dart';
 
 import 'screens/localization.dart';
 

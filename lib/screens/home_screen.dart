@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:weva/screens/pages/ServicePageProvider.dart';
+import 'package:weva/screens/pages/ServiceProviderPage.dart';
+import 'package:weva/screens/pages/cardfile.dart';
 import 'package:weva/screens/pages/health_screen.dart';
 import 'package:weva/screens/pages/home_product.dart';
 import 'package:weva/screens/pages/salon_screen.dart';
+import 'package:weva/screens/profile.dart';
+import 'package:weva/screens/userProfile.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -19,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               height: MediaQuery.of(context).size.height,
               child: DefaultTabController(
-                length: 5,
+                length: 10,
 
                 //// this is for appbar//
                 child: Scaffold(
@@ -69,13 +74,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       bottom: TabBar(
                         isScrollable: true,
+                        indicatorSize: TabBarIndicatorSize.label,
+                        labelPadding: EdgeInsets.symmetric(horizontal: 10),
                         indicatorColor: Colors.red,
-                        indicatorWeight: 6.0,
                         onTap: (index) {
                           setState(() {});
                         },
                         tabs: <Widget>[
                           Tab(
+                            iconMargin: EdgeInsets.all(0),
                             child: Container(
                               child: Text(
                                 'Home',
@@ -120,6 +127,51 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                           ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Profile',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'User Profile',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Cart',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Service Provider',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Service Provider Page',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -130,6 +182,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         HealthScreen(),
                         HealthScreen(),
                         HealthScreen(),
+                        Profile(),
+                        UserProfile(),
+                        Cardfile(),
+                        ServiceProviderPage(),
+                        ServicePageProvider(),
                       ],
                     )),
               ),
