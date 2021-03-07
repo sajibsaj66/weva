@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:weva/screens/pages/ServicePageOne.dart';
 import 'package:weva/screens/pages/ServicePageProvider.dart';
 import 'package:weva/screens/pages/ServiceProviderPage.dart';
 import 'package:weva/screens/pages/cardfile.dart';
@@ -187,6 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Cardfile(),
                         ServiceProviderPage(),
                         ServicePageProvider(),
+                      //  ServicePageeOne(),
                       ],
                     )),
               ),

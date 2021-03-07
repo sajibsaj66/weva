@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd536ef1-1aa8-4835-8471-9520e6b17c53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/pages/Pay.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/pages/ServicePageOne.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/pages/ServicePageProvider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/pages/ServicePageProvider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/pages/cardfile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/pages/cardfile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ovga6tztjbz9rgvs]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pPgZlQB1SYjCVYXDfDg2rCr48u" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sajib\AndroidStudioProjects\weva-project-git\assets\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd536ef1-1aa8-4835-8471-9520e6b17c53" name="Default Changelist" comment="" />
+      <created>1615090196475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615090196475</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615107657926">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615107657926" />
+    <state width="983" height="378" key="GridCell.Tab.0.bottom" timestamp="1615141550922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="983" height="378" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615141550922" />
+    <state width="983" height="378" key="GridCell.Tab.0.center" timestamp="1615141550920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="983" height="378" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615141550920" />
+    <state width="983" height="378" key="GridCell.Tab.0.left" timestamp="1615141550919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="983" height="378" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615141550919" />
+    <state width="983" height="378" key="GridCell.Tab.0.right" timestamp="1615141550921">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="983" height="378" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615141550921" />
+    <state x="263" y="106" key="IDE.errors.dialog" timestamp="1615140164443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="106" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1615140164443" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1615090397325">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1615090397325" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1615140789414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1615140789414" />
+    <state x="213" y="71" width="587" height="592" key="find.popup" timestamp="1615126236865">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="71" width="587" height="592" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1615126236865" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1615090619284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1615090619284" />
+  </component>
+</project>

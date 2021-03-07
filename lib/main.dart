@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:weva/screens/home_screen.dart';
+import 'package:weva/screens/pages/ServicePageOne.dart';
 import 'package:weva/screens/pages/ServicePageProvider.dart';
-import 'package:weva/screens/pages/ServiceProviderPage.dart';
-import 'package:weva/screens/pages/cardfile.dart';
-
 import 'screens/localization.dart';
+import 'screens/pages/Pay.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +23,8 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Localization(),
+     // home: ServicePageProvider(),
+     home: Pay(),
     );
   }
 }
