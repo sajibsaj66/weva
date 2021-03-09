@@ -12,6 +12,38 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
   bool _isBluetoothOn = false;
   @override
   Widget build(BuildContext context) {
+    DateTime _chosenDateTime;
+
+    // Show the modal that contains the CupertinoDatePicker
+    void _showDatePicker(ctx) {
+      // showCupertinoModalPopup is a built-in function of the cupertino library
+      showCupertinoModalPopup(
+          context: ctx,
+          builder: (_) => Container(
+            height: 500,
+            color: Color.fromARGB(255, 255, 255, 255),
+            child: Column(
+              children: [
+                Container(
+                  height: 400,
+                  child: CupertinoDatePicker(
+                      initialDateTime: DateTime.now(),
+                      onDateTimeChanged: (val) {
+                        setState(() {
+                          _chosenDateTime = val;
+                        });
+                      }),
+                ),
+
+                // Close the modal
+                CupertinoButton(
+                  child: Text('New Service'),
+                  onPressed: () => Navigator.of(ctx).pop(),
+                )
+              ],
+            ),
+          ));
+    }
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -224,7 +256,7 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
 
             InkWell(
               onTap: (){
-                showDatePicker();
+                _showDatePicker(context);
               },
               child: Padding(
                 padding: const EdgeInsets.only(right:200.0),
@@ -241,24 +273,24 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
       ),
     );
   }
-  void showDatePicker(){
-    showModalBottomSheet(context: context, builder:(_){
-      return  SingleChildScrollView(
-        child: Column(
-         // crossAxisAlignment: CrossAxisAlignment.stretch,
-         // mainAxisSize: MainAxisSize.min,
-          children: [
-            CupertinoDatePicker(onDateTimeChanged: (DateTime value) {  },
-            ),
-            ElevatedButton(onPressed: (){
-            },
-              child:Text("New Service") ,
-            ),
-
-
-          ],
-        ),
-      );
-    });
-  }
+  // void showDatePicker(){
+  //   showModalBottomSheet(context: context, builder:(_){
+  //     return  SingleChildScrollView(
+  //       child: Column(
+  //        // crossAxisAlignment: CrossAxisAlignment.stretch,
+  //        // mainAxisSize: MainAxisSize.min,
+  //         children: [
+  //           CupertinoDatePicker(onDateTimeChanged: (DateTime value) {  },
+  //           ),
+  //           ElevatedButton(onPressed: (){
+  //           },
+  //             child:Text("New Service") ,
+  //           ),
+  //
+  //
+  //         ],
+  //       ),
+  //     );
+  //   });
+  // }
 }

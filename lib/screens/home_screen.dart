@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:weva/screens/pages/BillInfo.dart';
+import 'package:weva/screens/pages/Filter.dart';
+import 'package:weva/screens/pages/Pay.dart';
 import 'package:weva/screens/pages/ServicePageOne.dart';
 import 'package:weva/screens/pages/ServicePageProvider.dart';
 import 'package:weva/screens/pages/ServiceProviderPage.dart';
@@ -25,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               height: MediaQuery.of(context).size.height,
               child: DefaultTabController(
-                length: 10,
+                length: 13,
 
                 //// this is for appbar//
                 child: Scaffold(
@@ -173,6 +176,34 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                           ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Pay',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Filter',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Bill Info',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+
                         ],
                       ),
                     ),
@@ -188,6 +219,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         Cardfile(),
                         ServiceProviderPage(),
                         ServicePageProvider(),
+                        Pay(),
+                        Filter(),
+                        BillInfo(),
                       //  ServicePageeOne(),
                       ],
                     )),

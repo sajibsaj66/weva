@@ -45,7 +45,7 @@ class _ServiceProviderPageState extends State<ServiceProviderPage> {
                         ],
                       ),
                     ],
-                  )
+                  ),
                 ],
               ),
               Padding(
