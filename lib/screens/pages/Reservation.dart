@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 class Reservation extends StatefulWidget {
   @override
@@ -9,230 +10,227 @@ class _ReservationState extends State<Reservation> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: SafeArea(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top:18.0),
-                child: Row(
-                  children: [
-                    IconButton(
-                        icon: Icon(
-                          Icons.arrow_back_ios,
-                          color: Colors.red,
-                        ),
-                        onPressed: () {}),
-                    Text(
-                      "         Reservation",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                  ],
-                ),
-              ),
-              Divider(thickness: 2,),
-              Card(
-                child: Row(
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-
-                            children: [
-                              Text("You have a rerservation on \n tomorrow at 03:30 PM"
-                                  ""),
-                            //  Text("03:30 PM",style: TextStyle(color: Colors.red[600]),),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
-                              SizedBox(height: 30,),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              SizedBox(height: 30,),
-                              Text("California"),
-
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left:38.0),
-                      child: Container(
-                        height: 150,
-                        width: 165,
-                        child: Image.asset('assets/images/res1.PNG'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top:18.0),
+              child: Row(
+                children: [
+                  IconButton(
+                      icon: Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.red,
                       ),
-                    ),
-                  ],
-                ),
+                      onPressed: () {}),
+                  Text(
+                    "         Reservation",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                ],
               ),
-              Card(
-                child: Row(
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
+            ),
+            Divider(thickness: 2,),
+            Card(
+              child: Row(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
 
-                            children: [
-                              Text("You have a rerservation on \n tomorrow at 03:30 PM"),
-                            ],
-                          ),
+                          children: [
+                            Text("You have a rerservation on \n tomorrow at 03:30 PM"
+                                ""),
+                          //  Text("03:30 PM",style: TextStyle(color: Colors.red[600]),),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
-                              SizedBox(height: 30,),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              SizedBox(height: 30,),
-                              Text("California"),
-
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left:38.0),
-                      child: Container(
-                        height: 150,
-                        width: 165,
-                        child: Image.asset('assets/images/res2.PNG'),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Row(
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-
-                            children: [
-                              Text("You have a rerservation on \n tomorrow at 03:30 PM"),
-                            ],
-                          ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
+                            SizedBox(height: 30,),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
-                              SizedBox(height: 30,),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              SizedBox(height: 30,),
-                              Text("California"),
-
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left:38.0),
-                      child: Container(
-                        height: 150,
-                        width: 165,
-                        child: Image.asset('assets/images/res3.PNG'),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Row(
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            SizedBox(height: 30,),
+                            Text("California"),
 
-                            children: [
-                              Text("You have a rerservation on \n tomorrow at 03:30 PM"),
-                            ],
-                          ),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
-                              SizedBox(height: 30,),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left:8.0),
-                          child: Row(
-                            children: [
-                              SizedBox(height: 30,),
-                              Text("California"),
-
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left:38.0),
-                      child: Container(
-                        height: 150,
-                        width: 165,
-                        child: Image.asset('assets/images/rs4.PNG',),
                       ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:38.0),
+                    child: Container(
+                      height: 150,
+                      width: 165,
+                      child: Image.asset('assets/images/res1.PNG'),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
+            ),
+            Card(
+              child: Row(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
 
+                          children: [
+                            Text("You have a rerservation on \n tomorrow at 03:30 PM"),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
+                            SizedBox(height: 30,),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            SizedBox(height: 30,),
+                            Text("California"),
 
-            ],
-          ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:38.0),
+                    child: Container(
+                      height: 150,
+                      width: 165,
+                      child: Image.asset('assets/images/res2.PNG'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              child: Row(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
 
+                          children: [
+                            Text("You have a rerservation on \n tomorrow at 03:30 PM"),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
+                            SizedBox(height: 30,),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            SizedBox(height: 30,),
+                            Text("California"),
 
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:38.0),
+                    child: Container(
+                      height: 150,
+                      width: 165,
+                      child: Image.asset('assets/images/res3.PNG'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              child: Row(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+
+                          children: [
+                            Text("You have a rerservation on \n tomorrow at 03:30 PM"),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            Text("Hello kitty Beauty Spa",style: TextStyle(color: Colors.green),),
+                            SizedBox(height: 30,),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:8.0),
+                        child: Row(
+                          children: [
+                            SizedBox(height: 30,),
+                            Text("California"),
+
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:38.0),
+                    child: Container(
+                      height: 150,
+                      width: 165,
+                      child: Image.asset('assets/images/rs4.PNG',),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(padding: EdgeInsets.only(bottom: 200)),
+
+          ],
         ),
       ),
     );

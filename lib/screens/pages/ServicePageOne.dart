@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_time_picker_spinner/flutter_time_picker_spinner.dart';
 
 class ServicePageeOne extends StatefulWidget {
   @override
@@ -20,30 +19,31 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
       showCupertinoModalPopup(
           context: ctx,
           builder: (_) => Container(
-            height: 500,
-            color: Color.fromARGB(255, 255, 255, 255),
-            child: Column(
-              children: [
-                Container(
-                  height: 400,
-                  child: CupertinoDatePicker(
-                      initialDateTime: DateTime.now(),
-                      onDateTimeChanged: (val) {
-                        setState(() {
-                          _chosenDateTime = val;
-                        });
-                      }),
-                ),
+                height: 500,
+                color: Color.fromARGB(255, 255, 255, 255),
+                child: Column(
+                  children: [
+                    Container(
+                      height: 400,
+                      child: CupertinoDatePicker(
+                          initialDateTime: DateTime.now(),
+                          onDateTimeChanged: (val) {
+                            setState(() {
+                              _chosenDateTime = val;
+                            });
+                          }),
+                    ),
 
-                // Close the modal
-                CupertinoButton(
-                  child: Text('New Service'),
-                  onPressed: () => Navigator.of(ctx).pop(),
-                )
-              ],
-            ),
-          ));
+                    // Close the modal
+                    CupertinoButton(
+                      child: Text('New Service'),
+                      onPressed: () => Navigator.of(ctx).pop(),
+                    )
+                  ],
+                ),
+              ));
     }
+
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -103,7 +103,7 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
                   Spacer(),
                   IconButton(icon: Icon(Icons.timer), onPressed: () {}),
                   Padding(
-                    padding: const EdgeInsets.only(right:8.0),
+                    padding: const EdgeInsets.only(right: 8.0),
                     child: Text(
                       "9:38",
                       style: TextStyle(fontSize: 20),
@@ -145,8 +145,8 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
                                 children: [
                                   CircleAvatar(
                                     radius: 30,
-                                    child: Image.asset(
-                                        "assets/images/user.png"),
+                                    child:
+                                        Image.asset("assets/images/user.png"),
                                   ),
                                   Text(
                                     "Elinda",
@@ -174,8 +174,8 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
                                 children: [
                                   CircleAvatar(
                                     radius: 30,
-                                    child: Image.asset(
-                                        "assets/images/user.png"),
+                                    child:
+                                        Image.asset("assets/images/user.png"),
                                   ),
                                   Text(
                                     "Elinda",
@@ -203,8 +203,8 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
                                 children: [
                                   CircleAvatar(
                                     radius: 30,
-                                    child: Image.asset(
-                                        "assets/images/user.png"),
+                                    child:
+                                        Image.asset("assets/images/user.png"),
                                   ),
                                   Text(
                                     "Elinda",
@@ -234,36 +234,37 @@ class _ServicePageeOneState extends State<ServicePageeOne> {
                 ],
               ),
             ),
-
-      Container(
-        child: Column(
-          children: <Widget>[
-
-            CheckboxListTile(
-              checkColor: Colors.red,
-              controlAffinity: ListTileControlAffinity.leading,
-              title: Text('Anyone',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-              value: _checkboxListTile,
-              onChanged: (value) {
-                setState(() {
-                  _checkboxListTile = !_checkboxListTile;
-                });
-              },
+            Container(
+              child: Column(
+                children: <Widget>[
+                  CheckboxListTile(
+                    checkColor: Colors.red,
+                    controlAffinity: ListTileControlAffinity.leading,
+                    title: Text(
+                      'Anyone',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    value: _checkboxListTile,
+                    onChanged: (value) {
+                      setState(() {
+                        _checkboxListTile = !_checkboxListTile;
+                      });
+                    },
+                  ),
+                ],
+              ),
             ),
-          ],
-        ),
-      ),
-
             InkWell(
-              onTap: (){
+              onTap: () {
                 _showDatePicker(context);
               },
               child: Padding(
-                padding: const EdgeInsets.only(right:200.0),
+                padding: const EdgeInsets.only(right: 200.0),
                 child: Container(
                   child: Text(
                     "Select a Time Slot",
-                    style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),
               ),

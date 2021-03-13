@@ -82,42 +82,54 @@ class _FilterState extends State<Filter> {
                 ),
               ],),
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 18.0),
-                    child: Icon(
-                      Icons.filter_list_alt,
-                      color: Colors.red,
+              Padding(
+                padding: const EdgeInsets.only(top:15.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 18.0),
+                      child: Icon(
+                        Icons.filter_list_alt,
+                        color: Colors.red,
+                      ),
                     ),
-                  ),
-                  Text(
-                    "Filter",
-                    style: TextStyle(color: Colors.red, fontSize: 17),
-                  ),
-                  Spacer(), // use Spacer
-                  Text(
-                    "Sort By :Closest",
-                    style: TextStyle(color: Colors.red, fontSize: 17),
-
-                  ),
-
-                  IconButton(
-                    icon: Icon(
-                      Icons.arrow_drop_down,
-                      size: 50,
-                      color: Colors.red,
+                    Text(
+                      "Filter",
+                      style: TextStyle(color: Colors.red, fontSize: 17),
                     ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => FilterDropDown()),
-                      );
+                    Spacer(), // use Spacer
+                    Text(
+                      "Sort By :Closest",
+                      style: TextStyle(color: Colors.red, fontSize: 17),
 
-                    },
-                  ),
 
-                ],
+                    ),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                                   context,
+                                 MaterialPageRoute(builder: (context) => FilterDropDown()),
+                                );
+                      },
+                        child: Icon(Icons.arrow_drop_down,color: Colors.red,size: 35,)),
+
+                    // IconButton(
+                    //   icon: Icon(
+                    //     Icons.arrow_drop_down,
+                    //     size: 50,
+                    //     color: Colors.red,
+                    //   ),
+                    //   onPressed: () {
+                    //     Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(builder: (context) => FilterDropDown()),
+                    //     );
+                    //
+                    //   },
+                    // ),
+
+                  ],
+                ),
               ),
               Divider(thickness: 2,),
               SizedBox(

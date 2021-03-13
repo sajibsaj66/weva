@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'Notification.dart';
+
 class ServicePageProvider extends StatefulWidget {
   @override
   _ServicePageProviderState createState() => _ServicePageProviderState();
@@ -267,6 +269,7 @@ class _ServicePageProviderState extends State<ServicePageProvider> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text("Services"),
+
                   ],
                 ),
               ),
@@ -307,6 +310,18 @@ class _ServicePageProviderState extends State<ServicePageProvider> {
                                       color: Colors.red),
                                 ),
                               ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left:88.0),
+                            child: IconButton(
+                                icon: Icon(Icons.error,color: Colors.red,),
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => Noti()),
+      );
+    },
                             ),
                           ),
                           Spacer(),
@@ -355,50 +370,16 @@ class _ServicePageProviderState extends State<ServicePageProvider> {
                         ],
                       ),
                     ),
-                    Spacer(),
-                    IconButton(
-                        icon: Icon(
-                          Icons.check_box,
-                          size: 30.0,
-                          color: Colors.red,
-                        ),
-                        onPressed: () {}),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                height: 100,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Blow Dry",
-                            style: TextStyle(
-                                fontSize: 19,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black),
-                          ),
-                          Text(
-                            "AED 250.00",
-                            style: TextStyle(
-                                fontSize: 19,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.red),
-                          ),
-                        ],
+                      padding: const EdgeInsets.only(left:88.0),
+                      child: IconButton(
+                        icon: Icon(Icons.error,color: Colors.red,),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => Noti()),
+                          );
+                        },
                       ),
                     ),
                     Spacer(),
@@ -445,6 +426,76 @@ class _ServicePageProviderState extends State<ServicePageProvider> {
                                 color: Colors.red),
                           ),
                         ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left:88.0),
+                      child: IconButton(
+                        icon: Icon(Icons.error,color: Colors.red,),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => Noti()),
+                          );
+                        },
+                      ),
+                    ),
+                    Spacer(),
+                    IconButton(
+                        icon: Icon(
+                          Icons.check_box,
+                          size: 30.0,
+                          color: Colors.red,
+                        ),
+                        onPressed: () {}),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Blow Dry",
+                            style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                          Text(
+                            "AED 250.00",
+                            style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.red),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left:88.0),
+                      child: IconButton(
+                        icon: Icon(Icons.error,color: Colors.red,),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => Noti()),
+                          );
+                        },
                       ),
                     ),
                     Spacer(),
@@ -463,36 +514,49 @@ class _ServicePageProviderState extends State<ServicePageProvider> {
                 height: 10,
               ),
               Container(
-                height: 100,
-                child: Row(
+                child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 318.0),
-                      child: CircleAvatar(
-                        child: Image.asset(
-                          "assets/images/chat.png",
-                          width: 400,
+                      child: Padding(
+                        padding: const EdgeInsets.only(right:30.0),
+                        child: CircleAvatar(
+                          radius: 30.0,
+                          backgroundColor: Colors.white,
+                          child: Image.asset(
+                            "assets/images/chat1.png",
+                            height: 100,
+                            width: 200,
+                          color: Colors.white,
+                          colorBlendMode: BlendMode.darken,
+
+                          // fit: BoxFit.contain,
+                           // semanticLabel: 'Desh Mascot',
+                          ),
+
                         ),
-                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                    SizedBox(height: 40,),
+                    Container(
+                      decoration: BoxDecoration(color: Colors.red),
+                      height: 50,
+                      width: 300,
+                      child: FlatButton(
+                        child: Text('Book Now',style: TextStyle(fontSize: 20,color: Colors.white.withOpacity(0.8)),),
+                        // color: Colors.red,
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.all(Radius.circular(50.0))),
+                        onPressed: () {},
                       ),
                     ),
                   ],
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 100,
               ),
-              Container(
-                height: 55,
-                width: 300,
-                child: ElevatedButton(
-                  child: Text('Book Now',style: TextStyle(fontSize: 30,color: Colors.white.withOpacity(0.8)),),
-                  // color: Colors.red,
-                  // shape: RoundedRectangleBorder(
-                  //     borderRadius: BorderRadius.all(Radius.circular(50.0))),
-                  onPressed: () {},
-                ),
-              ),
+
             ],
           ),
         ),

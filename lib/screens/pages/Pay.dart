@@ -578,6 +578,7 @@ class _PayState extends State<Pay> {
                     ),
                   ),
                 ),
+                SizedBox(height: 100,),
               ],
             ),
           ),

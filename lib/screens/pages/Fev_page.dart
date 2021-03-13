@@ -13,19 +13,6 @@ class _FpageState extends State<Fpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child:Row(
-          children: [
-        GestureDetector(
-       // onTap: home.showAlert();
-
-        ),
-
-
-
-          ],
-        )
-      ),
       bottomNavigationBar: CurvedNavigationBar(
         height: 50,
         color: Colors.black38,
@@ -43,6 +30,17 @@ class _FpageState extends State<Fpage> {
         },
       ),
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: (){
+            showDialog(
+              context: context,
+              builder: (conetx) {
+                return showAlert();
+              },
+            );
+          },
+          icon: Icon(Icons.menu),
+        ),
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,
@@ -88,7 +86,7 @@ class _FpageState extends State<Fpage> {
                         ),
                         onPressed: () {}),
                     Text(
-                      "         Notification",
+                      "         Favorite Page",
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
@@ -374,11 +372,180 @@ class _FpageState extends State<Fpage> {
 
 
               SizedBox(
-                height: 15.0,
+                height: 150.0,
               ),
 
             ], //Mail Children
           ),
+        ),
+      ),
+    );
+  }
+  Widget showAlert() {
+    return AlertDialog(
+      content: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Stack(
+          overflow: Overflow.visible,
+          alignment: Alignment.topCenter,
+          children: [
+            Container(
+              height: 450,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                color: const Color(0xFFFFFF),
+                borderRadius: BorderRadius.all(Radius.circular(40.0)),
+              ),
+              child: ListView(
+                children: [
+                  ListTile(
+                    leading: Icon(
+                      Icons.markunread,
+                      color: Colors.green,
+                    ),
+                    title: Text(
+                      "Profile",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.cake,
+                      color: Colors.pink,
+                    ),
+                    title: Text(
+                      "Eva Points",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.call_end,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "My reservation",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.notifications,
+                      color: Colors.red,
+                    ),
+                    title: Text(
+                      "Notifications",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.verified_user,
+                      color: Colors.green,
+                    ),
+                    title: Text(
+                      "User Directory",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.search,
+                      color: Colors.green,
+                    ),
+                    title: Text(
+                      "About us",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.settings,
+                      color: Colors.blue,
+                    ),
+                    title: Text(
+                      "Settings",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.all_out,
+                      color: Colors.red,
+                    ),
+                    title: Text(
+                      "Logout",
+                      style: TextStyle(color: Colors.black, fontSize: 18),
+                    ),
+                    trailing: Icon(
+                      Icons.arrow_right,
+                      size: 25,
+                      color: Colors.red,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Positioned(
+                top: -90,
+                child: Text(
+                  "Menu",
+                  style: TextStyle(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                )),
+            Positioned(
+              bottom: -60,
+              child: IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  print("Clicked");
+                },
+                icon: Icon(
+                  Icons.cancel,
+                  size: 60,
+                  color: Colors.redAccent,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

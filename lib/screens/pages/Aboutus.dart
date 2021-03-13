@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:international_phone_input/international_phone_input.dart';
 import 'package:weva/widgets/custom_btn.dart';
 
-import '../phone_OTP_screen.dart';
-
 class PageAboutUS extends StatefulWidget {
   @override
   _PageAboutUSState createState() => _PageAboutUSState();
@@ -26,7 +24,6 @@ class _PageAboutUSState extends State<PageAboutUS> {
   List<bool> checked = [
     true,
   ];
-
 
   @override
   Widget build(BuildContext context) {
@@ -138,9 +135,8 @@ class _PageAboutUSState extends State<PageAboutUS> {
               SizedBox(
                 height: 20,
               ),
-
               Container(
-                height: 50,
+                height: 40,
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'First Name',
@@ -149,17 +145,17 @@ class _PageAboutUSState extends State<PageAboutUS> {
                 ),
               ),
               Container(
-                height: 50,
+                height: 40,
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Last Name',
-                   // hintText: "dd/mm/yyyy ",
+                    // hintText: "dd/mm/yyyy ",
                     border: OutlineInputBorder(),
                   ),
                 ),
               ),
               Container(
-                height: 50,
+                height: 40,
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Email',
@@ -168,7 +164,7 @@ class _PageAboutUSState extends State<PageAboutUS> {
                 ),
               ),
               Container(
-                height: 50,
+                height: 40,
                 child: InternationalPhoneInput(
                   onPhoneNumberChange: onPhoneNumberChange,
                   initialPhoneNumber: phoneNumber,
@@ -181,15 +177,14 @@ class _PageAboutUSState extends State<PageAboutUS> {
                   labelText: "Phone Number",
                 ),
               ),
-
               Container(
-                height: 50,
+                height: 40,
                 child: TextFormField(
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: 'Message',
                     border: OutlineInputBorder(),
-                   // suffixIcon: Icon(Icons.lock),
+                    // suffixIcon: Icon(Icons.lock),
                   ),
                 ),
               ),
@@ -197,13 +192,13 @@ class _PageAboutUSState extends State<PageAboutUS> {
                 height: 20,
               ),
               Padding(
-                padding: const EdgeInsets.only(right:200.0),
+                padding: const EdgeInsets.only(right: 200.0),
                 child: CustomBtn(
                   text: "Submit",
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 100,
               ),
             ], // Main Childres
           ),

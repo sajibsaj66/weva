@@ -22,9 +22,5 @@
     {
         "merged": "C:\\Users\\Sajib\\Downloads\\Compressed\\New folder\\weva-20210307T204957Z-001\\weva\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Sajib\\Downloads\\Compressed\\New folder\\weva-20210307T204957Z-001\\weva\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Sajib\\Downloads\\Compressed\\New folder\\weva-20210307T204957Z-001\\weva\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
-        "source": "C:\\Users\\Sajib\\Downloads\\Compressed\\New folder\\weva-20210307T204957Z-001\\weva\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
     }
 ]

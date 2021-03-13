@@ -1,8 +1,13 @@
-import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/material.dart';
+import 'package:weva/screens/pages/Aboutus.dart';
 import 'package:weva/screens/pages/BillInfo.dart';
+import 'package:weva/screens/pages/Fev_page.dart';
 import 'package:weva/screens/pages/Filter.dart';
+import 'package:weva/screens/pages/Nearby.dart';
+import 'package:weva/screens/pages/Notification.dart';
 import 'package:weva/screens/pages/Pay.dart';
+import 'package:weva/screens/pages/Reservation.dart';
 import 'package:weva/screens/pages/ServicePageOne.dart';
 import 'package:weva/screens/pages/ServicePageProvider.dart';
 import 'package:weva/screens/pages/ServiceProviderPage.dart';
@@ -27,8 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Container(
               height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
               child: DefaultTabController(
-                length: 13,
+                length: 19,
 
                 //// this is for appbar//
                 child: Scaffold(
@@ -170,6 +176,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           Tab(
                             child: Container(
                               child: Text(
+                                'ServicePageeOne',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
                                 'Service Provider Page',
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 18.0),
@@ -203,7 +218,51 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                           ),
-
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                ' Reservertion',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Notification',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                ' Favorite Page',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'About Us ',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              child: Text(
+                                'Nearby',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 18.0),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -218,11 +277,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         UserProfile(),
                         Cardfile(),
                         ServiceProviderPage(),
+                        ServicePageeOne(),
                         ServicePageProvider(),
                         Pay(),
                         Filter(),
                         BillInfo(),
-                      //  ServicePageeOne(),
+                        Reservation(),
+                        Noti(),
+                        Fpage(),
+                        PageAboutUS(),
+                        Nearby(),
                       ],
                     )),
               ),
@@ -274,57 +338,96 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     title: Text(
                       "Profile",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
-                    trailing: Icon(
-                      Icons.arrow_right,
-                      size: 25,
-                      color: Colors.red,
-                    ),
+                    trailing: IconButton(
+                        icon: Padding(
+                          padding: const EdgeInsets.only(left: 18.0),
+                          child: Icon(
+                            Icons.arrow_right,
+                            size: 25,
+                            color: Colors.red,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => Profile()),
+                          );
+                        }),
                   ),
                   ListTile(
-                    leading: Icon(
-                      Icons.cake,
-                      color: Colors.pink,
-                    ),
-                    title: Text(
-                      "Eva Points",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
-                    ),
-                    trailing: Icon(
-                      Icons.arrow_right,
-                      size: 25,
-                      color: Colors.red,
-                    ),
-                  ),
+                      leading: Icon(
+                        Icons.cake,
+                        color: Colors.pink,
+                      ),
+                      title: Text(
+                        "Eva Points",
+                        style: TextStyle(color: Colors.black, fontSize: 16),
+                      ),
+                      trailing: IconButton(
+                          icon: Padding(
+                            padding: const EdgeInsets.only(left: 18.0),
+                            child: Icon(
+                              Icons.arrow_right,
+                              size: 25,
+                              color: Colors.red,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (_) => UserProfile()),
+                            );
+                          })),
                   ListTile(
-                    leading: Icon(
-                      Icons.call_end,
-                      color: Colors.teal,
-                    ),
-                    title: Text(
-                      "My reservation",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
-                    ),
-                    trailing: Icon(
-                      Icons.arrow_right,
-                      size: 25,
-                      color: Colors.red,
-                    ),
-                  ),
+                      leading: Icon(
+                        Icons.call_end,
+                        color: Colors.teal,
+                      ),
+                      title: Text(
+                        "My reservation",
+                        style: TextStyle(color: Colors.black, fontSize: 16),
+                      ),
+                      trailing: IconButton(
+                          icon: Padding(
+                            padding: const EdgeInsets.only(left: 18.0),
+                            child: Icon(
+                              Icons.arrow_right,
+                              size: 25,
+                              color: Colors.red,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (_) => Reservation()),
+                            );
+                          })),
                   ListTile(
                     leading: Icon(
                       Icons.notifications,
                       color: Colors.red,
                     ),
                     title: Text(
-                      "Notifications",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      "Notifications  ",
+                      style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
-                    trailing: Icon(
-                      Icons.arrow_right,
-                      size: 25,
-                      color: Colors.red,
+                    trailing: IconButton(
+                      icon: Padding(
+                        padding: const EdgeInsets.only(left: 18.0),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 25,
+                          color: Colors.red,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Noti()),
+                        );
+                      },
                     ),
                   ),
                   ListTile(
@@ -334,7 +437,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     title: Text(
                       "User Directory",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
                     trailing: Icon(
                       Icons.arrow_right,
@@ -348,13 +451,25 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.green,
                     ),
                     title: Text(
-                      "About us",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      "About us  ",
+                      style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
-                    trailing: Icon(
-                      Icons.arrow_right,
-                      size: 25,
-                      color: Colors.red,
+                    trailing: IconButton(
+                      icon: Padding(
+                        padding: const EdgeInsets.only(left: 15.0),
+                        child: Icon(
+                          Icons.arrow_right,
+                          size: 25,
+                          color: Colors.red,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PageAboutUS()),
+                        );
+                      },
                     ),
                   ),
                   ListTile(
@@ -364,7 +479,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     title: Text(
                       "Settings",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
                     trailing: Icon(
                       Icons.arrow_right,
@@ -379,7 +494,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     title: Text(
                       "Logout",
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
                     trailing: Icon(
                       Icons.arrow_right,
